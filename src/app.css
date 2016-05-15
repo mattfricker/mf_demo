@@ -1,0 +1,7 @@
+.orgImageHolder {
+    height: 100px;
+}
+
+.orgImageHolder img.disabled {
+    opacity: .2;
+}

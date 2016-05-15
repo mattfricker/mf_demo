@@ -1,0 +1,5 @@
+<div ng-controller="searchController as searchVm">
+    <div class="col-md-3 orgImageHolder" ng-repeat="org in searchVm.orgData track by $index">
+        <img ng-class="{'disabled': !org.relevantToSearch}" ng-src="{{searchVm.images.path + org.imagePath + searchVm.images.ext}}" alt="">
+    </div>
+</div>

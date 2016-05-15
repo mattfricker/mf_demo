@@ -1,0 +1,43 @@
+{
+  "name": "mf_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start karma.conf.js",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattfricker/mogley.git"
+  },
+  "author": "Matthew S. Fricker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mattfricker/mogley/issues"
+  },
+  "homepage": "https://github.com/mattfricker/mogley#readme",
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "jspm": "^0.16.34",
+    "karma": "^0.13.22",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-jspm": "^2.1.0",
+    "lite-server": "^2.2.0"
+  },
+  "jspm": {
+    "dependencies": {
+      "angular": "npm:angular@^1.5.5",
+      "css": "github:systemjs/plugin-css@^0.1.21",
+      "image": "github:systemjs/plugin-image@^0.1.0",
+      "json": "github:systemjs/plugin-json@^0.1.2",
+      "text": "github:systemjs/plugin-text@^0.0.8"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}

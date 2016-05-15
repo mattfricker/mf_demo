@@ -1,0 +1,12 @@
+[
+    {
+        "programType": "Scholarship",
+        "educationLevel": "Kindergarten",
+        "imagePath": "acec"
+    },
+    {
+        "programType": "Loan",
+        "educationLevel": "High School",
+        "imagePath": "aci"
+    }
+]
