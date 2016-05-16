@@ -5,8 +5,17 @@
         "imagePath": "acec"
     },
     {
-        "programType": "Loan",
+        "programType": "Scholarship",
         "educationLevel": "High School",
+        "imagePath": "aci"
+    },
+    {
+        "programType": "Loan",
+        "educationLevel": "Kindergarten",
+        "imagePath": "acec"
+    },
+    {
+        "programType": "Loan",
         "imagePath": "aci"
     }
 ]
