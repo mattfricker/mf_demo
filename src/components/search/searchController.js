@@ -7,6 +7,18 @@ function searchController() {
         path: '/src/images/',
         ext: '.png'
     };
+    vm.selectOptions = {
+      programTypes: [
+          'ALL',
+          'Scholarship',
+          'Loan'
+      ],
+      educationLevels: [
+          'ALL',
+          'Kindergarten',
+          'High School'
+      ]
+    };
 }
 
 export default searchController;
