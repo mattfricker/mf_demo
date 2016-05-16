@@ -1,5 +1,25 @@
 <div ng-controller="searchController as searchVm">
-    <div class="col-md-3 orgImageHolder" ng-repeat="org in searchVm.orgData track by $index">
-        <img ng-class="{'disabled': !org.relevantToSearch}" ng-src="{{searchVm.images.path + org.imagePath + searchVm.images.ext}}" alt="">
+    <div class="container">
+        <h1 class="searchPageHeader">Society Education Programs</h1>
+        
+        <div class="searchForm">
+            <select 
+                ng-model="searchVm.programType" 
+                ng-options="program for program in searchVm.selectOptions.programTypes"
+            >
+                <option value="" disabled selected style="display: none;"> PROGRAM TYPE </option>
+            </select>
+            <select 
+                ng-model="searchVm.educationLevel"
+                ng-options="level for level in searchVm.selectOptions.educationLevels"
+            >
+                <option value="" disabled selected style="display: none;"> EDUCATION LEVEL </option>
+            </select>
+            <button class="searchButton">Search</button>
+        </div>
+        
+        <div class="col-md-3 orgImageHolder" ng-repeat="org in searchVm.orgData track by $index">
+            <img ng-class="{'disabled': !org.relevantToSearch}" ng-src="{{searchVm.images.path + org.imagePath + searchVm.images.ext}}" alt="">
+        </div>
     </div>
 </div>
