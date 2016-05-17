@@ -132,7 +132,7 @@ describe('checkSearchRelevancy function', function() {
         });
         
         it('should set relevantToSearch to true for all educationLevel values',  function() {
-            expect(checkSearchRelevancy(orgData, ['educationLevel', 'ALL']))
+            expect(checkSearchRelevancy(orgData, ['educationLevel', 'SEARCH ALL']))
                 .toEqual(
                     [
                         {
@@ -225,7 +225,7 @@ describe('checkSearchRelevancy function', function() {
         });
         
         it('should set relevantToSearch to true for all programType values',  function() {
-            expect(checkSearchRelevancy(orgData, ['programType', 'ALL']))
+            expect(checkSearchRelevancy(orgData, ['programType', 'SEARCH ALL']))
                 .toEqual(
                     [
                         {
@@ -330,7 +330,7 @@ describe('checkSearchRelevancy function', function() {
             expect(checkSearchRelevancy(
                 orgData, 
                 ['educationLevel', 'Kindergarten'], 
-                ['programType', 'ALL'])
+                ['programType', 'SEARCH ALL'])
             ).toEqual(
                 [
                     {
@@ -444,7 +444,7 @@ describe('checkSearchRelevancy function', function() {
             expect(checkSearchRelevancy(
                 orgData, 
                 ['educationLevel', 'High School'], 
-                ['programType', 'ALL'])
+                ['programType', 'SEARCH ALL'])
             ).toEqual(
                 [
                     {

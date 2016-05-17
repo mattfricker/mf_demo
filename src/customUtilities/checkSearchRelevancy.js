@@ -25,7 +25,7 @@ function checkSearchRelevancy(organizations, ...searchOptions) {
         return Object.assign({}, org, {relevantToSearch: bool})
         
         function checkOrgRelevancy(option) {
-            if (option[1] !== 'ALL' && org[option[0]] !== option[1]) {
+            if (option[1] !== 'SEARCH ALL' && org[option[0]] !== option[1]) {
                 bool = false;
             }
         }

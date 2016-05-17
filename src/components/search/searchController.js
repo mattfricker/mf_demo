@@ -11,12 +11,12 @@ function searchController() {
     };
     vm.selectOptions = {
       programTypes: [
-          'ALL',
+          'SEARCH ALL',
           'Scholarship',
           'Loan'
       ],
       educationLevels: [
-          'ALL',
+          'SEARCH ALL',
           'Kindergarten',
           'High School'
       ]
