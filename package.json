@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/karma/bin/karma start karma.conf.js",
-    "dev": "lite-server"
+    "dev": "lite-server",
+    "bundle": "jspm bundle-sfx src/app.js app.bundle.js --skip-source-maps --minify"
   },
   "repository": {
     "type": "git",
