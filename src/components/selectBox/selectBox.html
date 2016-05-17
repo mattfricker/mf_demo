@@ -1,0 +1,10 @@
+<div class="searchBox">
+    <div class="selectedOption">{{selectedOption ? selectedOption : placeHolder}}</div>
+    <div 
+        class="searchOption" 
+        ng-repeat="option in options track by $index"
+        ng-click="changeFunction(option)"
+    >
+        {{option}}
+    </div>
+</div>
