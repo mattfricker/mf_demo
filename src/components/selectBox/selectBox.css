@@ -8,40 +8,40 @@
     padding-right: 10px;
 }
 
-.selectBox_mf_demo .selectedOption{
-    background: #FFF;
-    width: 100%;
-    text-transform: uppercase;
-    color: rgb(209, 215, 185);
-    cursor: pointer;
-}
-
 .selectBox_mf_demo .optionContainer {
-    text-transform: uppercase;
     background: rgb(227, 220, 221);
     color: rgb(67, 7, 0);
+    position: absolute;
+    text-transform: uppercase;
     width: 100%;
     z-index: 100;
-    position: absolute;
 }
 
+.selectBox_mf_demo .option {
+    border-bottom: 1px solid rgba(41, 36, 27, .25);
+    cursor: pointer;
+    padding-left: 25px;
+    width: 100%;
+}
+
+.selectBox_mf_demo .option:hover {
+    background: rgba(0, 0, 0, .1);
+}
 
 .selectBox_mf_demo .option:last-child {
     border-bottom: none;
 }
 
 .selectBox_mf_demo .padded {
-    padding: 10px 0 10px 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.selectBox_mf_demo .option {
-    width: 100%;
-    border-bottom: 1px solid rgba(41, 36, 27, .25);
-    padding-left: 10px;
+.selectBox_mf_demo .selectedOption{
+    background: #FFF;
+    color: rgb(209, 215, 185);
     cursor: pointer;
-    width: inherit;
-}
-
-.selectBox_mf_demo .option:hover {
-    background: rgba(0, 0, 0, .1);
+    padding-left: 10px;
+    text-transform: uppercase;
+    width: 100%;
 }
