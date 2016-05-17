@@ -28,6 +28,10 @@ function searchController() {
         if (!!vm.educationLevel) searchOptions.push(['educationLevel', vm.educationLevel])
         vm.orgData = searchUtil(organizationData, ...searchOptions);
     };
+    
+    vm.onProgramTypeChange = newVal => vm.programType = newVal;
+    vm.onEducationLevelChange = newVal => vm.educationLevel = newVal;
+  
 }
 
 export default searchController;

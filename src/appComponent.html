@@ -3,6 +3,16 @@
     
     <div class="searchForm container">
         <div class="row">
+            <select-box
+                class="col-md-5"
+                place-holder="PROGRAM TYPE" 
+                selected-option="{{searchVm.programType}}"
+                options="searchVm.selectOptions.programTypes"
+                change-function="searchVm.onProgramTypeChange"
+            >
+            </select-box>          
+        </div>
+        <div class="row">
             <div class="selectContainer col-md-6">                    
                 <select
                     ng-model="searchVm.programType" 
