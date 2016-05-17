@@ -40,23 +40,19 @@
         "imagePath": "acm"
     },
     {
-        "programType": "Scholarship",
         "educationLevel": "Kindergarten",
         "imagePath": "acm"
     },
     {
-        "programType": "Loan",
         "educationLevel": "Kindergarten",
         "imagePath": "afe"
     },
     {
         "programType": "Scholarship",
-        "educationLevel": "High School",
         "imagePath": "acec"
     },
     {
         "programType": "Loan",
-        "educationLevel": "High School",
         "imagePath": "aci"
     }
 ]
