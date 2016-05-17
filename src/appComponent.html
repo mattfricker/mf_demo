@@ -5,7 +5,7 @@
         <div class="searchForm">
             <div class="row">
                 <select-box
-                    class="col-md-6"
+                    class="col-xs-12 col-md-6"
                     place-holder="PROGRAM TYPE" 
                     selected-option="{{searchVm.programType}}"
                     options="searchVm.selectOptions.programTypes"
@@ -13,7 +13,7 @@
                 >
                 </select-box>          
                 <select-box
-                    class="col-md-6"
+                    class="col-xs-12 col-md-6"
                     place-holder="EDUCATION LEVEL" 
                     selected-option="{{searchVm.educationLevel}}"
                     options="searchVm.selectOptions.educationLevels"
@@ -24,7 +24,7 @@
             <div class="row">
                 <button 
                     ng-click="searchVm.processAndSearch()"
-                    class="searchButton col-md-2 col-md-offset-5"
+                    class="searchButton xol-xs-6 col-xs-offset-3 col-md-2 col-md-offset-5"
                 >
                     SEARCH
                 </button>
@@ -32,7 +32,7 @@
         </div>
     </div>
     <div class="col-md-10 col-md-offset-1">        
-        <div class="col-md-3 orgImageHolder" ng-repeat="org in searchVm.orgData track by $index">
+        <div class="col-xs-12 col-md-3 orgImageHolder" ng-repeat="org in searchVm.orgData track by $index">
             <img 
                 ng-class="{'disabled': !org.relevantToSearch}" 
                 ng-src="{{searchVm.images.path + org.imagePath + searchVm.images.ext}}" 
