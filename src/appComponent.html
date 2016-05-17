@@ -1,32 +1,34 @@
-<div ng-controller="searchController as searchVm">
+<div ng-controller="searchController as searchVm" class="container-fluid">
     <h1 class="searchPageHeader">Society Education Programs</h1>
     
-    <div class="searchForm container">
-        <div class="row">
-            <select-box
-                class="col-md-6"
-                place-holder="PROGRAM TYPE" 
-                selected-option="{{searchVm.programType}}"
-                options="searchVm.selectOptions.programTypes"
-                change-function="searchVm.onProgramTypeChange"
-            >
-            </select-box>          
-            <select-box
-                class="col-md-6"
-                place-holder="EDUCATION LEVEL" 
-                selected-option="{{searchVm.educationLevel}}"
-                options="searchVm.selectOptions.educationLevels"
-                change-function="searchVm.onEducationLevelChange"
-            >
-            </select-box>
-        </div>
-        <div class="row">
-            <button 
-            ng-click="searchVm.processAndSearch()"
-            class="searchButton col-md-2 col-md-offset-5"
-            >
-                SEARCH
-            </button>
+    <div class="col-md-10 col-md-offset-1">
+        <div class="searchForm">
+            <div class="row">
+                <select-box
+                    class="col-md-6"
+                    place-holder="PROGRAM TYPE" 
+                    selected-option="{{searchVm.programType}}"
+                    options="searchVm.selectOptions.programTypes"
+                    change-function="searchVm.onProgramTypeChange"
+                >
+                </select-box>          
+                <select-box
+                    class="col-md-6"
+                    place-holder="EDUCATION LEVEL" 
+                    selected-option="{{searchVm.educationLevel}}"
+                    options="searchVm.selectOptions.educationLevels"
+                    change-function="searchVm.onEducationLevelChange"
+                >
+                </select-box>
+            </div>
+            <div class="row">
+                <button 
+                ng-click="searchVm.processAndSearch()"
+                class="searchButton col-md-2 col-md-offset-5"
+                >
+                    SEARCH
+                </button>
+            </div>
         </div>
     </div>
     <div class="col-md-10 col-md-offset-1">        
