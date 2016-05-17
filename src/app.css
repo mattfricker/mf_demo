@@ -12,6 +12,15 @@
     font-family: ralewayBold;
 }
 
+.noSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .orgImageHolder {
     height: 120px;
 }
@@ -29,7 +38,7 @@
 }
 
 .searchForm {
-    background: rgb(227, 220, 221);
+    background: #EEE;
     padding: 20px 0;
     margin-bottom: 50px;
 }

@@ -19,6 +19,7 @@ System.config({
     "core-js": "npm:core-js@1.2.6",
     "css": "github:systemjs/plugin-css@0.1.21",
     "image": "github:systemjs/plugin-image@0.1.0",
+    "jquery": "npm:jquery@2.2.3",
     "json": "github:systemjs/plugin-json@0.1.2",
     "karma": "npm:karma@0.13.22",
     "text": "github:systemjs/plugin-text@0.0.8",
