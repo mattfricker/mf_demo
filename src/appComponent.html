@@ -11,24 +11,14 @@
                 change-function="searchVm.onProgramTypeChange"
             >
             </select-box>          
-        </div>
-        <div class="row">
-            <div class="selectContainer col-md-6">                    
-                <select
-                    ng-model="searchVm.programType" 
-                    ng-options="program for program in searchVm.selectOptions.programTypes"
-                >
-                    <option value="" disabled selected style="display: none;"> PROGRAM TYPE </option>
-                </select>
-            </div>
-            <div class="selectContainer col-md-6">                    
-                <select 
-                    ng-model="searchVm.educationLevel"
-                    ng-options="level for level in searchVm.selectOptions.educationLevels"
-                >
-                    <option value="" disabled selected style="display: none;"> EDUCATION LEVEL </option>
-                </select>
-            </div>                
+            <select-box
+                class="col-md-5"
+                place-holder="EDUCATION LEVEL" 
+                selected-option="{{searchVm.educationLevel}}"
+                options="searchVm.selectOptions.educationLevels"
+                change-function="searchVm.onEducationLevelChange"
+            >
+            </select-box>
         </div>
         <div class="row">
             <button 
