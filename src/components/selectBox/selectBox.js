@@ -15,7 +15,8 @@ let selectBox = function () {
         template,
         controller,
         link: function ($scope, element, attrs) {
-            var selectedOption = $('.selectedOption-getSize').first();
+            //Ensures the width of the select box is uniform
+            const selectedOption = $('.selectedOption-getSize').first();
             const targetWidth = selectedOption.outerWidth();
             const optionsContainer = $('.optionContainer-resize').first();
             optionsContainer.outerWidth(targetWidth);
