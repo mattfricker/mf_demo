@@ -12,6 +12,10 @@
     font-family: ralewayBold;
 }
 
+.logoContainer {
+    margin-bottom: 50px;
+}
+
 .noSelect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -47,15 +51,16 @@
 
 .searchForm {
     background: #EEE;
-    margin-top: 50px;
     padding: 150px 20px 30px;
+    margin-top: 30px;
     margin-bottom: 100px;
 }
 
 .searchPageHeader {
     font-family: greatVibes;
     text-align: center;
-    font-size: 56px;
+    font-size: 64px;
     color: rgb(157, 34, 42);
     text-shadow: 1px 1.732px 0px rgba(255, 255, 255, 0.004);
+    margin-top: 50px;
 }
