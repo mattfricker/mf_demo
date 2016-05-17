@@ -1,7 +1,59 @@
+@font-face {
+    font-family: greatVibes;
+    src: url(./fonts/greatVibes/GreatVibes-Regular.otf);
+}
+
+@font-face {
+    font-family: ralewayBold;
+    src: url(./fonts/raleway/Raleway-Bold.ttf);
+}
+
+* {
+    font-family: ralewayBold;
+}
+
 .orgImageHolder {
-    height: 100px;
+    height: 120px;
 }
 
 .orgImageHolder img.disabled {
     opacity: .2;
+}
+
+.searchButton {
+    background: rgb(157, 34, 42);
+    color: #FFF;
+    text-transform: uppercase;
+    border: none;
+    height: 40px;
+}
+
+.searchForm {
+    background: rgb(227, 220, 221);
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+
+.searchPageHeader {
+    font-family: greatVibes;
+    text-align: center;
+    font-size: 56px;
+    color: rgb(157, 34, 42);
+    text-shadow: 1px 1.732px 0px rgba(255, 255, 255, 0.004);
+}
+
+.searchForm option {
+    text-transform: uppercase;
+    background: rgb(227, 220, 221);
+    color: rgb(67, 7, 0);
+    margin-top: 100px;
+}
+
+.selectContainer select{
+    width: 97%;
+    margin: 10px 0 10px 2%;
+    height: 40px;
+    padding: 10px;
+    text-transform: uppercase;
+    color: rgb(209, 215, 185);
 }

@@ -1,25 +1,36 @@
 <div ng-controller="searchController as searchVm">
-    <div class="container">
-        <h1 class="searchPageHeader">Society Education Programs</h1>
-        
-        <div class="searchForm">
-            <select 
-                ng-model="searchVm.programType" 
-                ng-options="program for program in searchVm.selectOptions.programTypes"
-            >
-                <option value="" disabled selected style="display: none;"> PROGRAM TYPE </option>
-            </select>
-            <select 
-                ng-model="searchVm.educationLevel"
-                ng-options="level for level in searchVm.selectOptions.educationLevels"
-            >
-                <option value="" disabled selected style="display: none;"> EDUCATION LEVEL </option>
-            </select>
-            <button class="searchButton">Search</button>
+    <h1 class="searchPageHeader">Society Education Programs</h1>
+    
+    <div class="searchForm container">
+        <div class="row">
+            <div class="selectContainer col-md-6">                    
+                <select
+                    ng-model="searchVm.programType" 
+                    ng-options="program for program in searchVm.selectOptions.programTypes"
+                >
+                    <option value="" disabled selected style="display: none;"> PROGRAM TYPE </option>
+                </select>
+            </div>
+            <div class="selectContainer col-md-6">                    
+                <select 
+                    ng-model="searchVm.educationLevel"
+                    ng-options="level for level in searchVm.selectOptions.educationLevels"
+                >
+                    <option value="" disabled selected style="display: none;"> EDUCATION LEVEL </option>
+                </select>
+            </div>                
         </div>
-        
-        <div class="col-md-3 orgImageHolder" ng-repeat="org in searchVm.orgData track by $index">
-            <img ng-class="{'disabled': !org.relevantToSearch}" ng-src="{{searchVm.images.path + org.imagePath + searchVm.images.ext}}" alt="">
+        <div class="row">
+            <button 
+            ng-click="searchVm.processAndSearch()"
+            class="searchButton col-md-2 col-md-offset-5"
+            >
+                SEARCH
+            </button>
         </div>
+    </div>
+    
+    <div class="col-md-3 orgImageHolder" ng-repeat="org in searchVm.orgData track by $index">
+        <img ng-class="{'disabled': !org.relevantToSearch}" ng-src="{{searchVm.images.path + org.imagePath + searchVm.images.ext}}" alt="">
     </div>
 </div>
