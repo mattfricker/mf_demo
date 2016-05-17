@@ -15,8 +15,14 @@ let selectBox = function () {
         template,
         controller,
         link: function ($scope, element, attrs) {
-            var targetWidth = document.querySelector('.selectedOption').offsetWidth;
-            document.querySelector('.optionContainer').style.width = targetWidth + 'px';
+            var selectedOption = $('.selectedOption-getSize').first();
+            const targetWidth = selectedOption.outerWidth();
+            const optionsContainer = $('.optionContainer-resize').first();
+            optionsContainer.outerWidth(targetWidth);
+            
+            //Remove initial classes so next select box also resizes correctly
+            selectedOption.removeClass("selectedOption-getSize");
+            optionsContainer.removeClass('optionContainer-resize');
         }
     };
 }
