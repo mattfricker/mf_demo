@@ -29,8 +29,13 @@
             </button>
         </div>
     </div>
-    
-    <div class="col-md-3 orgImageHolder" ng-repeat="org in searchVm.orgData track by $index">
-        <img ng-class="{'disabled': !org.relevantToSearch}" ng-src="{{searchVm.images.path + org.imagePath + searchVm.images.ext}}" alt="">
+    <div class="col-md-10 col-md-offset-1">        
+        <div class="col-md-3 orgImageHolder" ng-repeat="org in searchVm.orgData track by $index">
+            <img 
+                ng-class="{'disabled': !org.relevantToSearch}" 
+                ng-src="{{searchVm.images.path + org.imagePath + searchVm.images.ext}}" 
+                alt="Logo for {{org.imagePath}}"
+            >
+        </div>
     </div>
 </div>
