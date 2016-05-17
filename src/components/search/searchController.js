@@ -29,6 +29,7 @@ function searchController() {
         vm.orgData = searchUtil(organizationData, ...searchOptions);
     };
     
+    //These are passed to the select box directives
     vm.onProgramTypeChange = newVal => vm.programType = newVal;
     vm.onEducationLevelChange = newVal => vm.educationLevel = newVal;
   
