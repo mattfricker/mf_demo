@@ -50,19 +50,3 @@
     color: rgb(157, 34, 42);
     text-shadow: 1px 1.732px 0px rgba(255, 255, 255, 0.004);
 }
-
-.searchForm option {
-    text-transform: uppercase;
-    background: rgb(227, 220, 221);
-    color: rgb(67, 7, 0);
-    margin-top: 100px;
-}
-
-.selectContainer select{
-    width: 97%;
-    margin: 10px 0 10px 2%;
-    height: 40px;
-    padding: 10px;
-    text-transform: uppercase;
-    color: rgb(209, 215, 185);
-}
