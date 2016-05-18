@@ -1,8 +1,8 @@
 const selectBoxOptions = {
     programTypes: [
         'SEARCH ALL',
-        'Scholarship',
-        'Loan'
+        'Scholarship Program',
+        'Loan Program'
     ],
     educationLevels: [
         'SEARCH ALL',

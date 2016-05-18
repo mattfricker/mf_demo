@@ -1,21 +1,21 @@
 [
     {
-        "programType": "Scholarship",
+        "programType": "Scholarship Program",
         "educationLevel": "Kindergarten",
         "imagePath": "acec"
     },
     {
-        "programType": "Scholarship",
+        "programType": "Scholarship Program",
         "educationLevel": "High School",
         "imagePath": "aci"
     },
     {
-        "programType": "Loan",
+        "programType": "Loan Program",
         "educationLevel": "Kindergarten",
         "imagePath": "acec"
     },
     {
-        "programType": "Loan",
+        "programType": "Loan Program",
         "imagePath": "aci"
     }
 ]

@@ -40,25 +40,25 @@ describe('checkSearchRelevancy function', function() {
                 .toEqual(
                     [
                         {
-                            "programType": "Scholarship",
+                            "programType": "Scholarship Program",
                             "educationLevel": "Kindergarten",
                             "imagePath": "acec",
                             "relevantToSearch": false
                         },
                         {
-                            "programType": "Scholarship",
+                            "programType": "Scholarship Program",
                             "educationLevel": "High School",
                             "imagePath": "aci",
                             "relevantToSearch": false
                         },
                         {
-                            "programType": "Loan",
+                            "programType": "Loan Program",
                             "educationLevel": "Kindergarten",
                             "imagePath": "acec",
                             "relevantToSearch": false
                         },
                         {
-                            "programType": "Loan",
+                            "programType": "Loan Program",
                             "imagePath": "aci",
                             "relevantToSearch": false
                         }
@@ -74,25 +74,25 @@ describe('checkSearchRelevancy function', function() {
                 .toEqual(
                     [
                         {
-                            "programType": "Scholarship",
+                            "programType": "Scholarship Program",
                             "educationLevel": "Kindergarten",
                             "imagePath": "acec",
                             "relevantToSearch": true
                         },
                         {
-                            "programType": "Scholarship",
+                            "programType": "Scholarship Program",
                             "educationLevel": "High School",
                             "imagePath": "aci",
                             "relevantToSearch": false
                         },
                         {
-                            "programType": "Loan",
+                            "programType": "Loan Program",
                             "educationLevel": "Kindergarten",
                             "imagePath": "acec",
                             "relevantToSearch": true
                         },
                         {
-                            "programType": "Loan",
+                            "programType": "Loan Program",
                             "imagePath": "aci",
                             "relevantToSearch": false
                         }
@@ -105,25 +105,25 @@ describe('checkSearchRelevancy function', function() {
                 .toEqual(
                     [
                         {
-                            "programType": "Scholarship",
+                            "programType": "Scholarship Program",
                             "educationLevel": "Kindergarten",
                             "imagePath": "acec",
                             "relevantToSearch": false
                         },
                         {
-                            "programType": "Scholarship",
+                            "programType": "Scholarship Program",
                             "educationLevel": "High School",
                             "imagePath": "aci",
                             "relevantToSearch": true
                         },
                         {
-                            "programType": "Loan",
+                            "programType": "Loan Program",
                             "educationLevel": "Kindergarten",
                             "imagePath": "acec",
                             "relevantToSearch": false
                         },
                         {
-                            "programType": "Loan",
+                            "programType": "Loan Program",
                             "imagePath": "aci",
                             "relevantToSearch": false
                         }
@@ -136,25 +136,25 @@ describe('checkSearchRelevancy function', function() {
                 .toEqual(
                     [
                         {
-                            "programType": "Scholarship",
+                            "programType": "Scholarship Program",
                             "educationLevel": "Kindergarten",
                             "imagePath": "acec",
                             "relevantToSearch": true
                         },
                         {
-                            "programType": "Scholarship",
+                            "programType": "Scholarship Program",
                             "educationLevel": "High School",
                             "imagePath": "aci",
                             "relevantToSearch": true
                         },
                         {
-                            "programType": "Loan",
+                            "programType": "Loan Program",
                             "educationLevel": "Kindergarten",
                             "imagePath": "acec",
                             "relevantToSearch": true
                         },
                         {
-                            "programType": "Loan",
+                            "programType": "Loan Program",
                             "imagePath": "aci",
                             "relevantToSearch": true
                         }
@@ -162,30 +162,30 @@ describe('checkSearchRelevancy function', function() {
                 );
         });
         
-        it('should set relevantToSearch to true for programType: Scholarship', function() {
-            expect(checkSearchRelevancy(orgData, ['programType', 'Scholarship']))
+        it('should set relevantToSearch to true for programType: Scholarship Program', function() {
+            expect(checkSearchRelevancy(orgData, ['programType', 'Scholarship Program']))
                 .toEqual(
                     [
                         {
-                            "programType": "Scholarship",
+                            "programType": "Scholarship Program",
                             "educationLevel": "Kindergarten",
                             "imagePath": "acec",
                             "relevantToSearch": true
                         },
                         {
-                            "programType": "Scholarship",
+                            "programType": "Scholarship Program",
                             "educationLevel": "High School",
                             "imagePath": "aci",
                             "relevantToSearch": true
                         },
                         {
-                            "programType": "Loan",
+                            "programType": "Loan Program",
                             "educationLevel": "Kindergarten",
                             "imagePath": "acec",
                             "relevantToSearch": false
                         },
                         {
-                            "programType": "Loan",
+                            "programType": "Loan Program",
                             "imagePath": "aci",
                             "relevantToSearch": false
                         }
@@ -193,30 +193,30 @@ describe('checkSearchRelevancy function', function() {
                 );
         });
         
-        it('should set relevantToSearch to true for programType: Loan',  function() {
-            expect(checkSearchRelevancy(orgData, ['programType', 'Loan']))
+        it('should set relevantToSearch to true for programType: Loan Program',  function() {
+            expect(checkSearchRelevancy(orgData, ['programType', 'Loan Program']))
                 .toEqual(
                     [
                         {
-                            "programType": "Scholarship",
+                            "programType": "Scholarship Program",
                             "educationLevel": "Kindergarten",
                             "imagePath": "acec",
                             "relevantToSearch": false
                         },
                         {
-                            "programType": "Scholarship",
+                            "programType": "Scholarship Program",
                             "educationLevel": "High School",
                             "imagePath": "aci",
                             "relevantToSearch": false
                         },
                         {
-                            "programType": "Loan",
+                            "programType": "Loan Program",
                             "educationLevel": "Kindergarten",
                             "imagePath": "acec",
                             "relevantToSearch": true
                         },
                         {
-                            "programType": "Loan",
+                            "programType": "Loan Program",
                             "imagePath": "aci",
                             "relevantToSearch": true
                         }
@@ -229,25 +229,25 @@ describe('checkSearchRelevancy function', function() {
                 .toEqual(
                     [
                         {
-                            "programType": "Scholarship",
+                            "programType": "Scholarship Program",
                             "educationLevel": "Kindergarten",
                             "imagePath": "acec",
                             "relevantToSearch": true
                         },
                         {
-                            "programType": "Scholarship",
+                            "programType": "Scholarship Program",
                             "educationLevel": "High School",
                             "imagePath": "aci",
                             "relevantToSearch": true
                         },
                         {
-                            "programType": "Loan",
+                            "programType": "Loan Program",
                             "educationLevel": "Kindergarten",
                             "imagePath": "acec",
                             "relevantToSearch": true
                         },
                         {
-                            "programType": "Loan",
+                            "programType": "Loan Program",
                             "imagePath": "aci",
                             "relevantToSearch": true
                         }
@@ -258,33 +258,33 @@ describe('checkSearchRelevancy function', function() {
     });
     
     describe('Passing two search options arguments', function() {
-        it('should set relevantToSearch to true if educationLevel: Kindergarten and programType: Loan', function() {
+        it('should set relevantToSearch to true if educationLevel: Kindergarten and programType: Loan Program', function() {
             expect(checkSearchRelevancy(
                 orgData, 
                 ['educationLevel', 'Kindergarten'], 
-                ['programType', 'Loan'])
+                ['programType', 'Loan Program'])
             ).toEqual(
                 [
                     {
-                        "programType": "Scholarship",
+                        "programType": "Scholarship Program",
                         "educationLevel": "Kindergarten",
                         "imagePath": "acec",
                         "relevantToSearch": false
                     },
                     {
-                        "programType": "Scholarship",
+                        "programType": "Scholarship Program",
                         "educationLevel": "High School",
                         "imagePath": "aci",
                         "relevantToSearch": false
                     },
                     {
-                        "programType": "Loan",
+                        "programType": "Loan Program",
                         "educationLevel": "Kindergarten",
                         "imagePath": "acec",
                         "relevantToSearch": true
                     },
                     {
-                        "programType": "Loan",
+                        "programType": "Loan Program",
                         "imagePath": "aci",
                         "relevantToSearch": false
                     }
@@ -292,33 +292,33 @@ describe('checkSearchRelevancy function', function() {
             );
         });
         
-        it('should set relevantToSearch to true if educationLevel: Kindergarten and programType: Scholarship', function() {
+        it('should set relevantToSearch to true if educationLevel: Kindergarten and programType: Scholarship Program', function() {
             expect(checkSearchRelevancy(
                 orgData, 
                 ['educationLevel', 'Kindergarten'], 
-                ['programType', 'Scholarship'])
+                ['programType', 'Scholarship Program'])
             ).toEqual(
                 [
                     {
-                        "programType": "Scholarship",
+                        "programType": "Scholarship Program",
                         "educationLevel": "Kindergarten",
                         "imagePath": "acec",
                         "relevantToSearch": true
                     },
                     {
-                        "programType": "Scholarship",
+                        "programType": "Scholarship Program",
                         "educationLevel": "High School",
                         "imagePath": "aci",
                         "relevantToSearch": false
                     },
                     {
-                        "programType": "Loan",
+                        "programType": "Loan Program",
                         "educationLevel": "Kindergarten",
                         "imagePath": "acec",
                         "relevantToSearch": false
                     },
                     {
-                        "programType": "Loan",
+                        "programType": "Loan Program",
                         "imagePath": "aci",
                         "relevantToSearch": false
                     }
@@ -334,25 +334,25 @@ describe('checkSearchRelevancy function', function() {
             ).toEqual(
                 [
                     {
-                        "programType": "Scholarship",
+                        "programType": "Scholarship Program",
                         "educationLevel": "Kindergarten",
                         "imagePath": "acec",
                         "relevantToSearch": true
                     },
                     {
-                        "programType": "Scholarship",
+                        "programType": "Scholarship Program",
                         "educationLevel": "High School",
                         "imagePath": "aci",
                         "relevantToSearch": false
                     },
                     {
-                        "programType": "Loan",
+                        "programType": "Loan Program",
                         "educationLevel": "Kindergarten",
                         "imagePath": "acec",
                         "relevantToSearch": true
                     },
                     {
-                        "programType": "Loan",
+                        "programType": "Loan Program",
                         "imagePath": "aci",
                         "relevantToSearch": false
                     }
@@ -360,44 +360,44 @@ describe('checkSearchRelevancy function', function() {
             );
         });
         
-        it('should set relevantToSearch to true if educationLevel: High School and programType: Loan', function() {
+        it('should set relevantToSearch to true if educationLevel: High School and programType: Loan Program', function() {
             expect(checkSearchRelevancy(
                 orgData.concat([
                     {
-                        "programType": "Loan",
+                        "programType": "Loan Program",
                         "imagePath": "aci",
                         'educationLevel': 'High School',
                     }
                 ]), 
                 ['educationLevel', 'High School'], 
-                ['programType', 'Loan'])
+                ['programType', 'Loan Program'])
             ).toEqual(
                 [
                     {
-                        "programType": "Scholarship",
+                        "programType": "Scholarship Program",
                         "educationLevel": "Kindergarten",
                         "imagePath": "acec",
                         "relevantToSearch": false
                     },
                     {
-                        "programType": "Scholarship",
+                        "programType": "Scholarship Program",
                         "educationLevel": "High School",
                         "imagePath": "aci",
                         "relevantToSearch": false
                     },
                     {
-                        "programType": "Loan",
+                        "programType": "Loan Program",
                         "educationLevel": "Kindergarten",
                         "imagePath": "acec",
                         "relevantToSearch": false
                     },
                     {
-                        "programType": "Loan",
+                        "programType": "Loan Program",
                         "imagePath": "aci",
                         "relevantToSearch": false
                     },
                     {
-                        "programType": "Loan",
+                        "programType": "Loan Program",
                         "imagePath": "aci",
                         "educationLevel": "High School",
                         "relevantToSearch": true
@@ -406,33 +406,33 @@ describe('checkSearchRelevancy function', function() {
             );
         });
         
-        it('should set relevantToSearch to true if educationLevel: High School and programType: Scholarship', function() {
+        it('should set relevantToSearch to true if educationLevel: High School and programType: Scholarship Program', function() {
             expect(checkSearchRelevancy(
                 orgData, 
                 ['educationLevel', 'High School'], 
-                ['programType', 'Scholarship'])
+                ['programType', 'Scholarship Program'])
             ).toEqual(
                 [
                     {
-                        "programType": "Scholarship",
+                        "programType": "Scholarship Program",
                         "educationLevel": "Kindergarten",
                         "imagePath": "acec",
                         "relevantToSearch": false
                     },
                     {
-                        "programType": "Scholarship",
+                        "programType": "Scholarship Program",
                         "educationLevel": "High School",
                         "imagePath": "aci",
                         "relevantToSearch": true
                     },
                     {
-                        "programType": "Loan",
+                        "programType": "Loan Program",
                         "educationLevel": "Kindergarten",
                         "imagePath": "acec",
                         "relevantToSearch": false
                     },
                     {
-                        "programType": "Loan",
+                        "programType": "Loan Program",
                         "imagePath": "aci",
                         "relevantToSearch": false
                     }
@@ -448,25 +448,25 @@ describe('checkSearchRelevancy function', function() {
             ).toEqual(
                 [
                     {
-                        "programType": "Scholarship",
+                        "programType": "Scholarship Program",
                         "educationLevel": "Kindergarten",
                         "imagePath": "acec",
                         "relevantToSearch": false
                     },
                     {
-                        "programType": "Scholarship",
+                        "programType": "Scholarship Program",
                         "educationLevel": "High School",
                         "imagePath": "aci",
                         "relevantToSearch": true
                     },
                     {
-                        "programType": "Loan",
+                        "programType": "Loan Program",
                         "educationLevel": "Kindergarten",
                         "imagePath": "acec",
                         "relevantToSearch": false
                     },
                     {
-                        "programType": "Loan",
+                        "programType": "Loan Program",
                         "imagePath": "aci",
                         "relevantToSearch": false
                     }
@@ -516,7 +516,7 @@ describe('checkSearchRelevancy function', function() {
             expect(function() {
                 checkSearchRelevancy(
                     orgData,
-                    ['programType', 'Loan'],
+                    ['programType', 'Loan Program'],
                     'hello'
                 )
             }).toThrow(new Error('All search options must be an Array'))
@@ -526,7 +526,7 @@ describe('checkSearchRelevancy function', function() {
             expect(function() {
                 checkSearchRelevancy(
                     orgData,
-                    ['programType', 'Loan'],
+                    ['programType', 'Loan Program'],
                     25
                 )
             }).toThrow(new Error('All search options must be an Array'))
@@ -536,7 +536,7 @@ describe('checkSearchRelevancy function', function() {
             expect(function() {
                 checkSearchRelevancy(
                     orgData,
-                    ['programType', 'Loan'],
+                    ['programType', 'Loan Program'],
                     {key: 'val'}
                 )
             }).toThrow(new Error('All search options must be an Array'))
@@ -546,7 +546,7 @@ describe('checkSearchRelevancy function', function() {
             expect(function() {
                 checkSearchRelevancy(
                     orgData,
-                    ['programType', 'Loan'],
+                    ['programType', 'Loan Program'],
                     function(){}
                 )
             }).toThrow(new Error('All search options must be an Array'))

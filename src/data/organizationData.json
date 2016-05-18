@@ -1,41 +1,41 @@
 [
     {
-        "programType": "Scholarship",
+        "programType": "Scholarship Program",
         "educationLevel": "Kindergarten",
         "imagePath": "acec"
     },
     {
-        "programType": "Loan",
+        "programType": "Loan Program",
         "educationLevel": "Kindergarten",
         "imagePath": "aci"
     },
     {
-        "programType": "Scholarship",
+        "programType": "Scholarship Program",
         "educationLevel": "High School",
         "imagePath": "acm"
     },
     {
-        "programType": "Loan",
+        "programType": "Loan Program",
         "educationLevel": "High School",
         "imagePath": "afe"
     },
     {
-        "programType": "Scholarship",
+        "programType": "Scholarship Program",
         "educationLevel": "Kindergarten",
         "imagePath": "aci"
     },
     {
-        "programType": "Loan",
+        "programType": "Loan Program",
         "educationLevel": "Kindergarten",
         "imagePath": "acec"
     },
     {
-        "programType": "Scholarship",
+        "programType": "Scholarship Program",
         "educationLevel": "High School",
         "imagePath": "afe"
     },
     {
-        "programType": "Loan",
+        "programType": "Loan Program",
         "educationLevel": "High School",
         "imagePath": "acm"
     },
@@ -48,11 +48,11 @@
         "imagePath": "afe"
     },
     {
-        "programType": "Scholarship",
+        "programType": "Scholarship Program",
         "imagePath": "acec"
     },
     {
-        "programType": "Loan",
+        "programType": "Loan Program",
         "imagePath": "aci"
     }
 ]
