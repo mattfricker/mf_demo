@@ -8,4 +8,4 @@ const prodSettings = {
     ext: '.png'
 };
 
-export default devSettings;
+export default prodSettings;
